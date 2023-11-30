@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.22)  30 NOV 2023 10:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.22)  30 NOV 2023 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,38 +556,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--121
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--131
+Underfull \hbox (badness 10000) in paragraph at lines 188--192
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 195--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--131
+Underfull \hbox (badness 10000) in paragraph at lines 195--202
 
  []
 
-<taz_k_1.png, id=33, 277.53688pt x 298.61563pt>
+<taz_k_1.png, id=38, 277.53688pt x 298.61563pt>
 File: taz_k_1.png Graphic file (type png)
 <use taz_k_1.png>
-Package pdftex.def Info: taz_k_1.png  used on input line 132.
+Package pdftex.def Info: taz_k_1.png  used on input line 203.
 (pdftex.def)             Requested size: 151.76854pt x 163.2959pt.
-[2 <./taz_k_1.png>]
-<taz_k_2.png, id=43, 277.53688pt x 298.61563pt>
+<taz_k_2.png, id=39, 277.53688pt x 298.61563pt>
 File: taz_k_2.png Graphic file (type png)
 <use taz_k_2.png>
-Package pdftex.def Info: taz_k_2.png  used on input line 141.
+Package pdftex.def Info: taz_k_2.png  used on input line 212.
 (pdftex.def)             Requested size: 151.76854pt x 163.2959pt.
- [3 <./taz_k_2.png>] (modelling_hw3_kravec.aux)
+<taz_k_3.png, id=40, 277.53688pt x 298.61563pt>
+File: taz_k_3.png Graphic file (type png)
+<use taz_k_3.png>
+Package pdftex.def Info: taz_k_3.png  used on input line 221.
+(pdftex.def)             Requested size: 151.76854pt x 163.2959pt.
+[3 <./taz_k_1.png> <./taz_k_2.png>] [4 <./taz_k_3.png>]
+(modelling_hw3_kravec.aux)
 Package rerunfilecheck Info: File `modelling_hw3_kravec.out' has not changed.
 (rerunfilecheck)             Checksum: 70C804CCC7969DC1F30F87BD051FC044;120.
  ) 
 Here is how much of TeX's memory you used:
- 13303 strings out of 476404
- 215551 string characters out of 2789524
- 1866324 words of memory out of 3000000
- 33469 multiletter control sequences out of 15000+600000
+ 13314 strings out of 476404
+ 215718 string characters out of 2789524
+ 1884324 words of memory out of 3000000
+ 33479 multiletter control sequences out of 15000+600000
  522423 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,76p,416b,465s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 75i,14n,76p,603b,450s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/majko/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-sup
 er-t1.enc}<C:/Users/majko/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmex10.pfb><C:/Users/majko/AppData/Local/Programs/MiKTeX/fonts/type1/pu
@@ -605,9 +615,9 @@ blic/amsfonts/cm/cmsy7.pfb><C:/Users/majko/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/cm-super/sfbx1200.pfb><C:/Users/majko/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/cm-super/sfcc1200.pfb><C:/Users/majko/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on modelling_hw3_kravec.pdf (3 pages, 269025 bytes).
+Output written on modelling_hw3_kravec.pdf (4 pages, 325749 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 40 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -114,10 +114,81 @@
 	
 	Ďalej chcem vypočítať tenzor zotrvačnosti $J$ pre os prechádzajúci ťažiskom telese, tento tenzor vieme vypočítať ako súčet tenzorov jednotlivých častí objektu $J = \sum_{i=1}^{3} J_i$.
 	\\
-	Takže teraz potrebujeme vypočítať tenzory hybnosti jednotlivých častí objektu. Nie som si istý ale mám pocit, že na to potrebujeme poznať ťažisko celého telesa, preto sa na chvíľu presunieme do časti c) kde práve túto informáciu vypočítavame.
+	Takže teraz potrebujeme vypočítať tenzory hybnosti jednotlivých častí objektu. Vypočítať $J_0$ týchto kvádrov už vieme ale keďže naše kvádre môžu mať posunuté ťažisko oproti ťažisku celého objektu a naša os otáčania prechádza ťažiskom objektu tak na výpočet  potrebujeme vypočítať ich ťažiská a aj ťažisko celého objektu aby sme mohli vypočítať vektory $r$. (Tieto výpočtu sú v časti c) ďalej v tejto časti úlohy už s nimi budeme pracovať preto je čitateľovi odporúčané si najskôr prečítať časť c)) 
 	\\
 	\\
-	Ako sme  vypočítali v časti c) ťažisko nášho telesa je bod $...$, zároveň sme vypočítali, ťažiská našich jednotlivých kvádrov. Teraz potrebujeme použitím týchto informácii vypočítať vektory $r$ čiže posuny hranolov v súradnicovej sústave od ťažiska.
+	Avšak skôr ako sa pustíme do výpočtov tenzorov $J$ našich kvádrov vypočítame maticu hybnosti $J_0$ pre os otáčania prechádzajúcu ich ťažiskom:
+	
+	\begin{align*}
+		J_{10} &= \begin{bmatrix}
+			\frac{m_1}{12}(h_1^2 + d_1^2) & 0 & 0 \\
+			0 & \frac{m_1}{12}(w_1^2 + d_1^2) & 0 \\
+			0 & 0 & \frac{m_1}{12}(w_1^2 + h_1^2)
+		\end{bmatrix} =
+		\begin{bmatrix}
+			\frac{9.44}{12}(2^2 + 2^2) & 0 & 0 \\
+			0 & \frac{9.44}{12}(2^2 + 2^2) & 0 \\
+			0 & 0 & \frac{9.44}{12}(2^2 + 2^2)
+		\end{bmatrix} =
+		\\
+		&= \begin{bmatrix}
+			0.78667 \cdot (4 + 4) & 0 & 0 \\
+			0 & 0.78667 \cdot (4 + 4) & 0 \\
+			0 & 0 & 0.78667 \cdot (4 + 4)
+		\end{bmatrix} =
+		\begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix}
+		\\
+		J_{20} &= \begin{bmatrix}
+			\frac{m_2}{12}(h_2^2 + d_2^2) & 0 & 0 \\
+			0 & \frac{m_2}{12}(w_2^2 + d_2^2) & 0 \\
+			0 & 0 & \frac{m_2}{12}(w_2^2 + h_2^2)
+		\end{bmatrix} =
+		\begin{bmatrix}
+			\frac{3.54}{12}(1^2 + 1^2) & 0 & 0 \\
+			0 & \frac{3.54}{12}(3^2 + 1^2) & 0 \\
+			0 & 0 & \frac{3.54}{12}(3^2 + 1^2)
+		\end{bmatrix} =
+		\\
+		&=\begin{bmatrix}
+			0.295 \cdot (1 + 1) & 0 & 0 \\
+			0 & 0.295 \cdot (9 + 1) & 0 \\
+			0 & 0 & 0.295 \cdot (9 + 1)
+		\end{bmatrix} =
+		\begin{bmatrix}
+			0.59 & 0 & 0 \\
+			0 & 2.95 & 0 \\
+			0 & 0 & 2.95
+		\end{bmatrix}
+		\\
+		J_{30} &= \begin{bmatrix}
+			\frac{m_3}{12}(h_3^2 + d_3^2) & 0 & 0 \\
+			0 & \frac{m_3}{12}(w_3^2 + d_3^2) & 0 \\
+			0 & 0 & \frac{m_3}{12}(w_3^2 + h_3^2)
+		\end{bmatrix} =
+		\begin{bmatrix}
+			\frac{9.44}{12}(2^2 + 2^2) & 0 & 0 \\
+			0 & \frac{9.44}{12}(2^2 + 2^2) & 0 \\
+			0 & 0 & \frac{9.44}{12}(2^2 + 2^2)
+		\end{bmatrix} =
+		\\
+		&= \begin{bmatrix}
+			0.78667 \cdot (4 + 4) & 0 & 0 \\
+			0 & 0.78667 \cdot (4 + 4) & 0 \\
+			0 & 0 & 0.78667 \cdot (4 + 4)
+		\end{bmatrix} =
+		\begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix}
+	\end{align*} 
+	\\
+	\\
+	Ako sme  vypočítali v časti c) ťažisko nášho telesa je bod $c=(0,0,0)$, zároveň sme vypočítali, ťažiská našich jednotlivých kvádrov. Teraz potrebujeme použitím týchto informácii vypočítať vektory $r$ čiže posuny hranolov v súradnicovej sústave od ťažiska.
 	
 	\subsection{}
 	
@@ -131,12 +202,41 @@
 	
 	\centerline{\includegraphics[width=0.3\textwidth]{taz_k_1}} 
 	
-	Z pôdorysov vieme vyčítať, že pozície dvoch protiľahlých vrcholov zvýraznených na našom obrázku sú $v_11 = (-2.5, 2.5, 0.5)$ a $v_12 = (-0.5, 0.5, -1.5)$, čiže ak z nich teraz vypočítame priemer dostaneme:
+	Z pôdorysov vieme vyčítať, že pozície dvoch protiľahlých vrcholov zvýraznených na našom obrázku sú $v_{11} = (-2.5, 2.5, 0.5)$ a $v_{12} = (-0.5, 0.5, -1.5)$, čiže ak z nich teraz vypočítame priemer dostaneme:
 	\begin{align*}
-		c_1 = \frac{v_11 + v_12}{2} = \frac{(-2.5, 2.5, 0.5) + (-0.5, 0.5, -1.5)}{2} = \frac{(-3, 3, -1)}{2} = (-1.5, 1.5, -0.5)
+		c_1 = \frac{v_{11} + v_{12}}{2} = \frac{(-2.5, 2.5, 0.5) + (-0.5, 0.5, -1.5)}{2} = \frac{(-3, 3, -1)}{2} = (-1.5, 1.5, -0.5)
 	\end{align*}
 
 	Podobne môžeme pokračovať pre kváder $k_2$:
 	
 	\centerline{\includegraphics[width=0.3\textwidth]{taz_k_2}}
+	
+	Takisto pomocou pôdorysov určíme označené vrcholy $v_{21} = (-1.5, 0.5, 0.5)$ a $v_{22} = (1.5, -0.5, -0.5)$. A takisto vypočítame ťažisko:
+	\begin{align*}
+		c_2 = \frac{v_{21} + v_{22}}{2} = \frac{(-1.5, 0.5, 0.5) + (1.5, -0.5, -0.5)}{2} = \frac{(0, 0, 0)}{2} = (0, 0, 0)
+	\end{align*}
+	
+	Nakoniec postup zopakujeme pre kváder $k_3$:
+	
+	\centerline{\includegraphics[width=0.3\textwidth]{taz_k_3}}
+	
+	Znovu z pôdorysov zistíme pozície vrcholov: $v_{31} = (0.5, -0.5, 1.5)$ a $v_{32} = (2.5, -2.5, -0.5)$. A vypočítame ťažisko:
+	
+	\begin{align*}
+		c_3 = \frac{v_{31} + v_{32}}{2} = \frac{(0.5, -0.5, 1.5) + (2.5, -2.5, -0.5)}{2} = \frac{(3, -3, 1)}{2} = (1.5, -1.5, 0.5)
+	\end{align*}
+
+	Teraz máme ťažiská jednotlivých kvádrov a z časti a) poznáme ich hmotnosti takže môžeme vypočítať ťažisko celého telesa:
+	
+	\begin{align*}
+		c &= \frac{\sum_{i=1}^{3} m_i \cdot c_i}{M} 
+		= \frac{m_1 \cdot c_1 + m_2 \cdot c_2 + m_3 \cdot c_3}{M} = 
+		\\ 
+		&= \frac{9.44 \cdot (-1.5, 1.5, -0.5) + 3.54 \cdot (0, 0, 0) + 9.44 \cdot (1.5, -1.5, 0.5)}{22.42} =
+		\\
+		&= \frac{(-14.16, 14.16, -4.72) + (0, 0, 0) + (14.16, -14.16, 4.72)}{22.42} = 
+		\\
+		&= \frac{(0, 0, 0)}{22.42}
+		= (0, 0, 0) 
+	\end{align*}
 \end{document}
