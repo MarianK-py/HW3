@@ -189,6 +189,305 @@
 	\\
 	\\
 	Ako sme  vypočítali v časti c) ťažisko nášho telesa je bod $c=(0,0,0)$, zároveň sme vypočítali, ťažiská našich jednotlivých kvádrov. Teraz potrebujeme použitím týchto informácii vypočítať vektory $r$ čiže posuny hranolov v súradnicovej sústave od ťažiska.
+
+	\begin{align*}
+		r_1 = c_1 - c = (-1.5, 1.5, -0.5) - (0, 0, 0) = (-1.5, 1.5, -0.5)
+		\\
+		r_2 = c_2 - c = (1.5, -1.5, 0.5) - (0, 0, 0) = (1.5, -1.5, 0.5)
+		\\
+		r_3 = c_3 - c = (0, 0, 0) - (0, 0, 0) = (0, 0, 0)
+	\end{align*}
+	
+	Ako predposledný krok teraz vypočítame tenzory zotrvačnosti našich kvádrov s ohľadom na os otáčania prechádzajúcu ťažiskom pomocou rovnice ktorú sme si na začiatku úlohy zadefinovali:
+	
+	\begin{align*}
+		J_1 &= J_{10} + m_1(r_1^Tr_1I-r_1r_1^T) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\left(
+		(-1.5, 1.5, -0.5)
+		\begin{pmatrix}
+			-1.5 \\ 1.5 \\ -0.5
+		\end{pmatrix}
+		\begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & 1
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			-1.5 \\ 1.5 \\ -0.5
+		\end{pmatrix}
+		(-1.5, 1.5, -0.5)
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\left(
+		(2.25 + 2.25 + 0.25)
+		\begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & 1
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			 2.25 & -2.25 &  0.75 \\
+			-2.25 &  2.25 & -0.75 \\
+			 0.75 & -0.75 &  0.25
+		\end{pmatrix}
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\left(
+		\begin{pmatrix}
+			4.75 & 0 & 0 \\
+			0 & 4.75 & 0 \\
+			0 & 0 & 4.75
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			2.25 & -2.25 &  0.75 \\
+			-2.25 &  2.25 & -0.75 \\
+			0.75 & -0.75 &  0.25
+		\end{pmatrix}
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\begin{pmatrix}
+			2.5 & 2.25 &  -0.75 \\
+			2.25 & 2.5 & 0.75 \\
+			-0.75 & 0.75 & 4.5
+		\end{pmatrix} =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		\begin{pmatrix}
+			23.6 & 21.24 &  -7.08 \\
+			21.24 & 23.6 & 7.08 \\
+			-7.08 & 7.08 & 42.48
+		\end{pmatrix} =
+		\\
+		&= 
+		\begin{bmatrix}
+			29.89333 & 21.24 &  -7.08 \\
+			21.24 & 29.89333 & 7.08 \\
+			-7.08 & 7.08 & 48.77333
+		\end{bmatrix} 
+	\end{align*}
+	\begin{align*}
+		J_2 &= J_{20} + m_2(r_2^Tr_2I-r_2r_2^T) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\left(
+		(1.5, -1.5, 0.5)
+		\begin{pmatrix}
+			1.5 \\ -1.5 \\ 0.5
+		\end{pmatrix}
+		\begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & 1
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			1.5 \\ -1.5 \\ 0.5
+		\end{pmatrix}
+		(1.5, -1.5, 0.5)
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\left(
+		(2.25 + 2.25 + 0.25)
+		\begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & 1
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			2.25 & -2.25 &  0.75 \\
+			-2.25 &  2.25 & -0.75 \\
+			0.75 & -0.75 &  0.25
+		\end{pmatrix}
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\left(
+		\begin{pmatrix}
+			4.75 & 0 & 0 \\
+			0 & 4.75 & 0 \\
+			0 & 0 & 4.75
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			2.25 & -2.25 &  0.75 \\
+			-2.25 &  2.25 & -0.75 \\
+			0.75 & -0.75 &  0.25
+		\end{pmatrix}
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		9.44
+		\begin{pmatrix}
+			2.5 & 2.25 &  -0.75 \\
+			2.25 & 2.5 & 0.75 \\
+			-0.75 & 0.75 & 4.5
+		\end{pmatrix} =
+		\\
+		&= \begin{bmatrix}
+			6.29333 & 0 & 0 \\
+			0 & 6.29333 & 0 \\
+			0 & 0 & 6.29333
+		\end{bmatrix} +
+		\begin{pmatrix}
+			23.6 & 21.24 &  -7.08 \\
+			21.24 & 23.6 & 7.08 \\
+			-7.08 & 7.08 & 42.48
+		\end{pmatrix} =
+		\\
+		&= 
+		\begin{bmatrix}
+			29.89333 & 21.24 &  -7.08 \\
+			21.24 & 29.89333 & 7.08 \\
+			-7.08 & 7.08 & 48.77333
+		\end{bmatrix}
+	\end{align*}
+	\begin{align*}
+		J_3 &= J_{30} + m_3(r_3^Tr_3I-r_3r_3^T) =
+		\\
+		&= \begin{bmatrix}
+			0.59 & 0 & 0 \\
+			0 & 2.95 & 0 \\
+			0 & 0 & 2.95
+		\end{bmatrix} +
+		3.54
+		\left(
+		(0, 0, 0)
+		\begin{pmatrix}
+			0 \\ 0 \\ 0
+		\end{pmatrix}
+		\begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & 1
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			0 \\ 0 \\ 0
+		\end{pmatrix}
+		(0, 0, 0)
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			0.59 & 0 & 0 \\
+			0 & 2.95 & 0 \\
+			0 & 0 & 2.95
+		\end{bmatrix} +
+		3.54
+		\left(
+		0
+		\begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & 1
+		\end{pmatrix}
+		-
+		\begin{pmatrix}
+			0 & 0 & 0 \\
+			0 & 0 & 0 \\
+			0 & 0 & 0
+		\end{pmatrix}
+		\right) =
+		\\
+		&= \begin{bmatrix}
+			0.59 & 0 & 0 \\
+			0 & 2.95 & 0 \\
+			0 & 0 & 2.95
+		\end{bmatrix} +
+		\begin{pmatrix}
+			0 & 0 & 0 \\
+			0 & 0 & 0 \\
+			0 & 0 & 0
+		\end{pmatrix}=
+		\\
+		&= \begin{bmatrix}
+			0.59 & 0 & 0 \\
+			0 & 2.95 & 0 \\
+			0 & 0 & 2.95
+		\end{bmatrix}
+	\end{align*}
+
+	Teraz môžeme vypočítať tenzor zotrvačnosti celého telesa ako súčet tenzorov jednotlivých častí:
+	
+	\begin{align*}
+		J &= \sum_{i=1}^{3} = J_1 + J_2 + J_3 =
+		\\
+		&=
+		\begin{bmatrix}
+			29.89333 & 21.24 &  -7.08 \\
+			21.24 & 29.89333 & 7.08 \\
+			-7.08 & 7.08 & 48.77333
+		\end{bmatrix} +
+		\begin{bmatrix}
+			29.89333 & 21.24 &  -7.08 \\
+			21.24 & 29.89333 & 7.08 \\
+			-7.08 & 7.08 & 48.77333
+		\end{bmatrix} +
+		\begin{bmatrix}
+			0.59 & 0 & 0 \\
+			0 & 2.95 & 0 \\
+			0 & 0 & 2.95
+		\end{bmatrix} =
+		\\
+		&=
+		\begin{bmatrix}
+			60.37666 & 42.48 &  -14.16 \\
+			42.48 & 62.73666 & 14.16 \\
+			-14.16 & 14.16 & 100.49666
+		\end{bmatrix}
+	\end{align*}
 	
 	\subsection{}
 	
@@ -209,32 +508,33 @@
 
 	Podobne môžeme pokračovať pre kváder $k_2$:
 	
-	\centerline{\includegraphics[width=0.3\textwidth]{taz_k_2}}
+	\centerline{\includegraphics[width=0.3\textwidth]{taz_k_3}}
 	
-	Takisto pomocou pôdorysov určíme označené vrcholy $v_{21} = (-1.5, 0.5, 0.5)$ a $v_{22} = (1.5, -0.5, -0.5)$. A takisto vypočítame ťažisko:
+	Znovu z pôdorysov zistíme pozície vrcholov: $v_{21} = (0.5, -0.5, 1.5)$ a $v_{22} = (2.5, -2.5, -0.5)$. A vypočítame ťažisko:
+	
 	\begin{align*}
-		c_2 = \frac{v_{21} + v_{22}}{2} = \frac{(-1.5, 0.5, 0.5) + (1.5, -0.5, -0.5)}{2} = \frac{(0, 0, 0)}{2} = (0, 0, 0)
+		c_2 = \frac{v_{21} + v_{22}}{2} = \frac{(0.5, -0.5, 1.5) + (2.5, -2.5, -0.5)}{2} = \frac{(3, -3, 1)}{2} = (1.5, -1.5, 0.5)
 	\end{align*}
+	
 	
 	Nakoniec postup zopakujeme pre kváder $k_3$:
 	
-	\centerline{\includegraphics[width=0.3\textwidth]{taz_k_3}}
+	\centerline{\includegraphics[width=0.3\textwidth]{taz_k_2}}
 	
-	Znovu z pôdorysov zistíme pozície vrcholov: $v_{31} = (0.5, -0.5, 1.5)$ a $v_{32} = (2.5, -2.5, -0.5)$. A vypočítame ťažisko:
-	
+	Takisto pomocou pôdorysov určíme označené vrcholy $v_{31} = (-1.5, 0.5, 0.5)$ a $v_{32} = (1.5, -0.5, -0.5)$. A takisto vypočítame ťažisko:
 	\begin{align*}
-		c_3 = \frac{v_{31} + v_{32}}{2} = \frac{(0.5, -0.5, 1.5) + (2.5, -2.5, -0.5)}{2} = \frac{(3, -3, 1)}{2} = (1.5, -1.5, 0.5)
+		c_3 = \frac{v_{31} + v_{32}}{2} = \frac{(-1.5, 0.5, 0.5) + (1.5, -0.5, -0.5)}{2} = \frac{(0, 0, 0)}{2} = (0, 0, 0)
 	\end{align*}
-
+	
 	Teraz máme ťažiská jednotlivých kvádrov a z časti a) poznáme ich hmotnosti takže môžeme vypočítať ťažisko celého telesa:
 	
 	\begin{align*}
 		c &= \frac{\sum_{i=1}^{3} m_i \cdot c_i}{M} 
 		= \frac{m_1 \cdot c_1 + m_2 \cdot c_2 + m_3 \cdot c_3}{M} = 
 		\\ 
-		&= \frac{9.44 \cdot (-1.5, 1.5, -0.5) + 3.54 \cdot (0, 0, 0) + 9.44 \cdot (1.5, -1.5, 0.5)}{22.42} =
+		&= \frac{9.44 \cdot (-1.5, 1.5, -0.5) + 9.44 \cdot (1.5, -1.5, 0.5) + 3.54 \cdot (0, 0, 0)}{22.42}  =
 		\\
-		&= \frac{(-14.16, 14.16, -4.72) + (0, 0, 0) + (14.16, -14.16, 4.72)}{22.42} = 
+		&= \frac{(-14.16, 14.16, -4.72) + (14.16, -14.16, 4.72) + (0, 0, 0)}{22.42} = 
 		\\
 		&= \frac{(0, 0, 0)}{22.42}
 		= (0, 0, 0) 
